@@ -10,8 +10,8 @@ Oracle Database 18c XEのソフトウェアを[Oracle Technology Network](https:
 
 * oracle-database-xe-18c-1.0-1.x86_64.rpm
 
-環境変数の設定
---------------
+カスタマイズ
+------------
 
 `dotenv.sample`というファイルを`.env`という名前のファイルにコピーし、必要に応じて内容を書き換える。
 
