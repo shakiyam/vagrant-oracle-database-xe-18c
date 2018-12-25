@@ -21,8 +21,8 @@ set +a
 # Verify SHA256 checksum
 echo "$checksum  $script_dir/$file" | sha256sum -c
 
-# # Install rlwrap
-# yum -y --enablerepo=ol7_developer_EPEL install rlwrap
+# Install rlwrap
+yum -y --enablerepo=ol7_developer_EPEL install rlwrap
 
 # Install the database software
 yum -y localinstall "$script_dir/$file"
