@@ -31,7 +31,7 @@ yum -y localinstall "$script_dir/$file"
 echo -e "${ORACLE_PASSWORD}\n${ORACLE_PASSWORD}" | /etc/init.d/oracle-xe-18c configure
 
 # Set environment variables
-cat <<EOT >> /home/vagrant/.bash_profile
+cat <<EOT >>/home/vagrant/.bash_profile
 export ORACLE_BASE=/opt/oracle/product/18c/dbhomeXE
 export ORACLE_HOME=/opt/oracle/product/18c/dbhomeXE
 export ORACLE_SID=XE
@@ -39,7 +39,7 @@ export PATH=\$PATH:\$ORACLE_HOME/bin
 EOT
 
 # Set alias
-cat <<EOT >> /home/vagrant/.bashrc
+cat <<EOT >>/home/vagrant/.bashrc
 alias sqlplus='rlwrap sqlplus'
 EOT
 
